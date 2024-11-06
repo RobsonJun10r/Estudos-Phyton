@@ -12,7 +12,10 @@ elif operacao == "*":
     mult = numero1 * numero2
     print("Resultado: ", mult)
 elif operacao == "/":
-    div = numero1 / numero2
-    print("Resultado: ", div)
+   if numero2 != 0:
+       resultado = numero1 / numero2
+       print("Resultado", resultado)
+   else:
+       print("Erro: Divisão por zero!")
 else:
-    print("Esta não é uma conta válida")
+    print("Esta não é uma operação válida")
